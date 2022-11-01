@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+      <title>JS PROJECT</title>
+  </head>
+ <body>
+   <div class="Wrapper">
+    <div class="Container">
+     <p class="heading"><b>A Message You Would Like To Pass..</b></p>
+      <input type="text" size="80" value="" id="textVal1" required>
+        <button type="button" onClick="change()">Submit</button>
+       <p class="last">Last Message Delivered!!</p>
+     <p class="Last" id="textVal2">Do This Project!</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+function change() {
+ var value1 = document.getElementById("textVal1").value;
+ document.getElementById("textVal2").innerHTML = value1;
+ setTimeout(function() { document.getElementById('textVal2').innerHTML='Do This Project!';},3000);
+}
+ </script>
+   </body>
+</html>
